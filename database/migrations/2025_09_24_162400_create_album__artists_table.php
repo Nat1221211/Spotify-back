@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('album__artists', function (Blueprint $table) {
             $table->id();
+            $table->unsignedInteger('id_artista');
+            $table->unsignedInteger('id_album');
             $table->timestamps();
         });
     }
