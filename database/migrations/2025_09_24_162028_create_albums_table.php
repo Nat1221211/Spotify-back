@@ -13,8 +13,10 @@ return new class extends Migration
     {
         Schema::create('albums', function (Blueprint $table) {
             $table->id();
+            $table->string('nom');
             $table->unsignedInteger('quantitat');
             $table->date('data');
+            $table->string('logo_img');
             $table->timestamps();
         });
     }

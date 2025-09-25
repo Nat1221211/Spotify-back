@@ -20,6 +20,8 @@ return new class extends Migration
             $table->date('data');
             $table->unsignedInteger('id_genere');
             $table->string('tipus');
+            $table->string('logo_img');
+            $table->string('background_img');
             $table->timestamps();
         });
     }

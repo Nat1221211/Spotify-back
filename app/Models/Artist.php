@@ -9,5 +9,5 @@ class Artist extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nom_artistic','nacionalitat','id_idioma','data_naixement','seguidors'];
+    protected $fillable = ['nom_artistic','nacionalitat','id_idioma','data_naixement','seguidors','logo_img'];
 }

@@ -9,5 +9,5 @@ class Languages extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nom'];
+    protected $fillable = ['idioma'];
 }
