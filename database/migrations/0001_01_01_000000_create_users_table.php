@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('nom');
             $table->string('cognom');
             $table->string('pais');
+            $table->string('profile_img');
             $table->unsignedBigInteger('seguidors');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();

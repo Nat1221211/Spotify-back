@@ -9,5 +9,5 @@ class Lists extends Model
 {
     //use HasFactory;
 
-    protected $fillable = ['nom'];
+    protected $fillable = ['nom','id_usuari','logo_img'];
 }
