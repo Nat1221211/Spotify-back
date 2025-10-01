@@ -13,7 +13,7 @@ class ListsSongsSeeder extends Seeder
      */
     public function run(): void
     {
-        Lists_Songs::updateOrCreate(
+        $values = [
             [
             'id_list' => 1,
             'id_song' => 1,  
@@ -29,7 +29,13 @@ class ListsSongsSeeder extends Seeder
             [
             'id_list' => 1,
             'id_song' => 4,  
-            ]
-        );
+            ],
+            ];
+        foreach($values as $value) {
+            Lists_Songs::updateOrCreate(
+               $value
+            );
+        }
+        
     }
 }
