@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('lists__songs', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('id_llista');
-            $table->unsignedInteger('id_canco');
+            $table->unsignedInteger('id_list');
+            $table->unsignedInteger('id_song');
             $table->timestamps();
         });
     }

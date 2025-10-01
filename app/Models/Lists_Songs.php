@@ -9,5 +9,5 @@ class Lists_Songs extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nom'];
+    protected $fillable = ['id_list', 'id_song'];
 }

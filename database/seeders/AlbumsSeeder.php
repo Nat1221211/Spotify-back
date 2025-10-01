@@ -15,9 +15,9 @@ class AlbumsSeeder extends Seeder
     {
         Albums::updateOrCreate(
             [
-            'nom'  => '',
-            'quantitat' => '',
-            'data' => '',
+            'nom'  => 'Sample Songs',
+            'quantitat' => 4,
+            'data' => '31/09/2025',
             'logo_img' => '',
             ]
         );

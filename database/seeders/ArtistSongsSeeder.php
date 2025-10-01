@@ -15,7 +15,20 @@ class ArtistSongsSeeder extends Seeder
     {
         Artist_songs::updateOrCreate(
             [
-            'nom'  => '',
+            'id_artista'  => 1,
+            'id_songs'  => 1,
+            ],
+            [
+            'id_artista'  => 1,
+            'id_songs'  => 2,
+            ],
+            [
+            'id_artista'  => 1,
+            'id_songs'  => 3,
+            ],
+            [
+            'id_artista'  => 1,
+            'id_songs'  => 4,
             ]
         );
     }
