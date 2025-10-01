@@ -22,8 +22,6 @@ class SongsSeeder extends Seeder
              'data' => '31/09/2025',
              'id_genere' => '1',
              'tipus' => 'Song',
-             'logo_img' => '',
-             'background_img' => '',
             ],
             [
              'nom' => 'Sample 2',
@@ -33,8 +31,6 @@ class SongsSeeder extends Seeder
              'data' => '31/09/2025',
              'id_genere' => '1',
              'tipus' => 'Song',
-             'logo_img' => '',
-             'background_img' => '',
             ],
             [
              'nom' => 'Sample 3',
@@ -44,8 +40,6 @@ class SongsSeeder extends Seeder
              'data' => '31/09/2025',
              'id_genere' => '1',
              'tipus' => 'Song',
-             'logo_img' => '',
-             'background_img' => '',
             ],
             [
              'nom' => 'Sample 4',
@@ -55,8 +49,6 @@ class SongsSeeder extends Seeder
              'data' => '31/09/2025',
              'id_genere' => '1',
              'tipus' => 'Song',
-             'logo_img' => '',
-             'background_img' => '',
             ]
         );
     }

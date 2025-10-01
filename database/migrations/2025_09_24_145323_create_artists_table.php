@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('nacionalitat');
             $table->unsignedInteger('id_idioma');
             $table->date('data_naixement');
-            $table->string('logo_img');
+            $table->string('logo_img')->nullable();
             $table->unsignedBigInteger('seguidors');
             $table->timestamps();
         });

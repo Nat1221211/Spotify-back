@@ -18,7 +18,6 @@ class AlbumsSeeder extends Seeder
             'nom'  => 'Sample Songs',
             'quantitat' => 4,
             'data' => '31/09/2025',
-            'logo_img' => '',
             ]
         );
     }

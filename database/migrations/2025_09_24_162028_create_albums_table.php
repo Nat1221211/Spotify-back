@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nom');
             $table->unsignedInteger('quantitat');
             $table->date('data');
-            $table->string('logo_img');
+            $table->string('logo_img')->nullable();
             $table->timestamps();
         });
     }
