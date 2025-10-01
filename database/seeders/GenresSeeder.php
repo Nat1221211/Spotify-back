@@ -15,7 +15,7 @@ class GenresSeeder extends Seeder
     {
         Genres::updateOrCreate(
             [
-            'nom' => '',
+            'nom' => 'Samples',
             ]
         );
     }

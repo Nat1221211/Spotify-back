@@ -15,7 +15,20 @@ class ListsSongsSeeder extends Seeder
     {
         Lists_Songs::updateOrCreate(
             [
-            'nom' => '', 
+            'id_list' => 1,
+            'id_song' => 1,  
+            ],
+            [
+            'id_list' => 1,
+            'id_song' => 2,  
+            ],
+            [
+            'id_list' => 1,
+            'id_song' => 3,  
+            ],
+            [
+            'id_list' => 1,
+            'id_song' => 4,  
             ]
         );
     }

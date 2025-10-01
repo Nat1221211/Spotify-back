@@ -15,8 +15,8 @@ class AlbumArtistSeeder extends Seeder
     {
         Album_Artist::updateOrCreate(
             [
-            'id_artista' => '', 
-            'id_album' => '',
+            'id_artista' => 1, 
+            'id_album' => 1,
             ]
         );
     }
