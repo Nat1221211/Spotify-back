@@ -18,10 +18,8 @@ class UsersSeeder extends Seeder
             'nom' => 'User 1',
             'cognom' => 'User',
             'pais' => 'Userland',
-            'profile_img' => '',
             'seguidors' => 10,
             'email' => 'user@gmail.com',
-            'email_verified_at' => 'google',
             'password' => 'user123456789',
             ]
         );

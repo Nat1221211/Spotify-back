@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nom');
             $table->unsignedInteger('id_usuari');
-            $table->string('logo_img');
+            $table->string('logo_img')->nullable();
             $table->timestamps();
         });
     }

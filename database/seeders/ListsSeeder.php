@@ -17,7 +17,6 @@ class ListsSeeder extends Seeder
             [
             'nom' => 'List 1',
             'id_usuari' => 1,
-            'logo_img' => '',
             ]
         );
     }
