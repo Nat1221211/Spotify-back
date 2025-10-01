@@ -13,23 +13,29 @@ class ArtistSongsSeeder extends Seeder
      */
     public function run(): void
     {
-        Artist_songs::updateOrCreate(
+        $values = [
             [
-            'id_artista'  => 1,
-            'id_songs'  => 1,
+            'id_artista' => 1,
+            'id_songs' => 1,  
             ],
             [
-            'id_artista'  => 1,
-            'id_songs'  => 2,
+            'id_artista' => 1,
+            'id_songs' => 2,  
             ],
             [
-            'id_artista'  => 1,
-            'id_songs'  => 3,
+            'id_artista' => 1,
+            'id_songs' => 3,  
             ],
             [
-            'id_artista'  => 1,
-            'id_songs'  => 4,
-            ]
-        );
+            'id_artista' => 1,
+            'id_songs' => 4,  
+            ],
+            ];
+            
+        foreach($values as $value) {
+            Artist_songs::updateOrCreate(
+               $value
+            );
+        }
     }
 }

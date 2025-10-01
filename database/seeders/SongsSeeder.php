@@ -13,7 +13,7 @@ class SongsSeeder extends Seeder
      */
     public function run(): void
     {
-        Songs::updateOrCreate(
+        $values = [
             [
              'nom' => 'Sample 1',
              'durada' => '2.35',
@@ -49,7 +49,16 @@ class SongsSeeder extends Seeder
              'data' => '2025-09-30',
              'id_genere' => '1',
              'tipus' => 'Song',
-            ]
-        );
+            ],
+            ];
+        
+        foreach ($values as $song) {
+            Songs::updateOrCreate(
+                [
+                'nom' => $song['nom'],
+                ], $song
+            );
+        }
+            
     }
 }
