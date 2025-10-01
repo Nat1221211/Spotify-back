@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Lists_Songs;
 
 class ListsSongsSeeder extends Seeder
 {
@@ -12,6 +13,10 @@ class ListsSongsSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        Lists_Songs::updateOrCreate(
+            [
+            'nom' => '', 
+            ]
+        );
     }
 }
