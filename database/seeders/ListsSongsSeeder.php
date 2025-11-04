@@ -15,20 +15,20 @@ class ListsSongsSeeder extends Seeder
     {
         $values = [
             [
-            'id_list' => 1,
-            'id_song' => 1,  
+            'Lists_id' => 1,
+            'Songs_id' => 1,  
             ],
             [
-            'id_list' => 1,
-            'id_song' => 2,  
+            'Lists_id' => 1,
+            'Songs_id' => 2,  
             ],
             [
-            'id_list' => 1,
-            'id_song' => 3,  
+            'Lists_id' => 1,
+            'Songs_id' => 3,  
             ],
             [
-            'id_list' => 1,
-            'id_song' => 4,  
+            'Lists_id' => 1,
+            'Songs_id' => 4,  
             ],
             ];
         foreach($values as $value) {
