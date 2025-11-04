@@ -11,11 +11,11 @@ class Lists_Songs extends Model
 
     protected $fillable = ['Lists_id', 'Songs_id'];
 
-    public function Lists() {
+    public function lists() {
         return $this->belongsToMany(Lists::class);
     }
 
-    public function Songs() {
+    public function songs() {
         return $this->belongsToMany(Songs::class);
     }
 }

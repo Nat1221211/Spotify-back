@@ -11,11 +11,11 @@ class Songs extends Model
 
     protected $fillable = ['nom','durada','Albums_id','views','data','Genres_id','tipus','logo_img','background_img'];
 
-    public function Albums() {
+    public function albums() {
         return $this->belongsTo(Albums::class);
     }
 
-    public function Genres() {
+    public function genres() {
         return $this->belongsTo(Genres::class);
     }
 
