@@ -9,5 +9,11 @@ class Lists extends Model
 {
     //use HasFactory;
 
-    protected $fillable = ['nom','id_usuari','logo_img'];
+    protected $fillable = ['nom','User_id','logo_img'];
+
+    public function User() {
+        return $this->belongsTo(User::class);
+    }
 }
+
+

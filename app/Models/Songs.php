@@ -9,5 +9,13 @@ class Songs extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nom','durada','id_album','views','data','id_genere','tipus','logo_img','background_img'];
+    protected $fillable = ['nom','durada','Albums_id','views','data','Genres_id','tipus','logo_img','background_img'];
+
+    public function Albums() {
+        return $this->belongsTo(Albums::class);
+    }
+
+    public function Genres() {
+        return $this->belongsTo(Genres::class);
+    }
 }
