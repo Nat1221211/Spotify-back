@@ -18,4 +18,8 @@ class Songs extends Model
     public function Genres() {
         return $this->belongsTo(Genres::class);
     }
+
+    public function lists_Songs() {
+        return $this->hasOne(Lists_Songs::class);
+    }
 }

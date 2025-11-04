@@ -10,4 +10,12 @@ class Albums extends Model
     use HasFactory;
 
     protected $fillable = ['nom','quantitat','data','logo_img'];
+
+    public function album_artist() {
+        return $this->hasOne(Album_Artist::class);
+    }
+
+    public function songs() {
+        return $this->hasOne(Songs::class);
+    }
 }

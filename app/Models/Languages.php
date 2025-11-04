@@ -10,4 +10,8 @@ class Languages extends Model
     use HasFactory;
 
     protected $fillable = ['idioma'];
+
+    public function artist() {
+        return $this->hasOne(Artist::class);
+    }
 }
