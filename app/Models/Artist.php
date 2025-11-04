@@ -10,4 +10,8 @@ class Artist extends Model
     use HasFactory;
 
     protected $fillable = ['nom_artistic','nacionalitat','Languages_id','data_naixement','seguidors','logo_img'];
+    
+    public function Languages() {
+        return $this->belongsTo(Languages::class);
+    }
 }

@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nom_artistic');
             $table->string('nacionalitat');
-            $table->unsignedInteger('id_idioma');
+            $table->unsignedInteger('Languages_id');
             $table->date('data_naixement');
             $table->string('logo_img')->nullable();
             $table->unsignedBigInteger('seguidors');

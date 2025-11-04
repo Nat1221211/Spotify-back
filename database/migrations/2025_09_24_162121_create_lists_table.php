@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('lists', function (Blueprint $table) {
             $table->id();
             $table->string('nom');
-            $table->unsignedInteger('id_usuari');
+            $table->unsignedInteger('User_id');
             $table->string('logo_img')->nullable();
             $table->timestamps();
         });
