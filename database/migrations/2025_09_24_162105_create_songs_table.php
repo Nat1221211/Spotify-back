@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('nom');
             $table->unsignedInteger('durada');
-            $table->unsignedInteger('id_album');
+            $table->unsignedInteger('Albums_id');
             $table->unsignedInteger('views');
             $table->date('data');
-            $table->unsignedInteger('id_genere');
+            $table->unsignedInteger('Genres_id');
             $table->string('tipus');
             $table->string('logo_img')->nullable();
             $table->string('background_img')->nullable();

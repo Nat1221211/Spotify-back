@@ -16,7 +16,7 @@ class ListsSeeder extends Seeder
         Lists::updateOrCreate(
             [
             'nom' => 'List 1',
-            'id_usuari' => 1,
+            'User_id' => 1,
             ]
         );
     }

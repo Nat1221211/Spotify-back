@@ -15,20 +15,20 @@ class ArtistSongsSeeder extends Seeder
     {
         $values = [
             [
-            'id_artista' => 1,
-            'id_songs' => 1,  
+            'Artist_id' => 1,
+            'Songs_id' => 1,  
             ],
             [
-            'id_artista' => 1,
-            'id_songs' => 2,  
+            'Artist_id' => 1,
+            'Songs_id' => 2,  
             ],
             [
-            'id_artista' => 1,
-            'id_songs' => 3,  
+            'Artist_id' => 1,
+            'Songs_id' => 3,  
             ],
             [
-            'id_artista' => 1,
-            'id_songs' => 4,  
+            'Artist_id' => 1,
+            'Songs_id' => 4,  
             ],
             ];
             
