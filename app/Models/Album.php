@@ -18,6 +18,6 @@ class Album extends Model
     }
 
     public function songs() {
-        return $this->hasOne(Songs::class);
+        return $this->hasOne(Song::class);
     }
 }

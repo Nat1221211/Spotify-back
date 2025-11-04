@@ -11,10 +11,10 @@ class Artist extends Model
 
     protected $table = 'artists';
 
-    protected $fillable = ['nom_artistic','nacionalitat','Languages_id','data_naixement','seguidors','logo_img'];
+    protected $fillable = ['nom_artistic','nacionalitat','languages_id','data_naixement','seguidors','logo_img'];
     
     public function languages() {
-        return $this->belongsTo(Languages::class);
+        return $this->belongsTo(Language::class);
     }
 
     public function albums() {
@@ -22,7 +22,9 @@ class Artist extends Model
 
     }
 
+    
+
     public function artist_Songs() {
-        return $this->belongsToMany(Artist_Songs::class);
+        return $this->belongsToMany(ArtistSong::class);
     }
 }
