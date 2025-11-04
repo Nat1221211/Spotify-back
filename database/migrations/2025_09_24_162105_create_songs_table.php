@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nom');
             $table->unsignedInteger('durada');
-            $table->unsignedInteger('Albums_id');
+            $table->unsignedInteger('album_id');
             $table->unsignedInteger('views');
             $table->date('data');
             $table->unsignedInteger('Genres_id');

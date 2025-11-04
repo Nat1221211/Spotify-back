@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Album_Artist extends Model
+class AlbumArtist extends Model
 {
    use HasFactory;
 
-    protected $fillable = ['Artist_id', 'Albums_id'];
+    protected $fillable = ['artist_id', 'album_id'];
 
     public function artist() {
         return $this->belongsToMany(Artist::class);

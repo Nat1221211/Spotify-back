@@ -9,17 +9,20 @@ class Artist extends Model
 {
     use HasFactory;
 
+    protected $table = 'artists';
+
     protected $fillable = ['nom_artistic','nacionalitat','Languages_id','data_naixement','seguidors','logo_img'];
     
     public function languages() {
         return $this->belongsTo(Languages::class);
     }
 
-    public function album_artist() {
-        return $this->hasOne(Album_Artist::class);
+    public function albums() {
+        return $this->belongsToMany(Artist::class, 'album_artists', 'album_id', 'artist_id');
+
     }
 
     public function artist_Songs() {
-        return $this->hasOne(Artist_Songs::class);
+        return $this->belongsToMany(Artist_Songs::class);
     }
 }

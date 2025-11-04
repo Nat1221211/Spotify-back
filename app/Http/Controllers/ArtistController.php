@@ -9,7 +9,7 @@ class ArtistController extends Controller
  // GET /api/artists
     public function index(Request $request)
     {
-        $artists = Artist::all();
+        $artists = Artist::with('albums')->get();
         return response()->json($artists);
     }
  // POST /api/artists
