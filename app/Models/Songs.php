@@ -22,4 +22,8 @@ class Songs extends Model
     public function lists_Songs() {
         return $this->hasOne(Lists_Songs::class);
     }
+
+    public function artist_Songs() {
+        return $this->hasOne(Artist_Songs::class);
+    }
 }
