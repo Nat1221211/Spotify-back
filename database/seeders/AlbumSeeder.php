@@ -4,16 +4,16 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Albums;
+use App\Models\Album;
 
-class AlbumsSeeder extends Seeder
+class AlbumSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Albums::updateOrCreate(
+        Album::updateOrCreate(
             [
             'nom'  => 'Sample Songs',
             'quantitat' => 4,

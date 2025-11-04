@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('artist__songs', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('Artist_id');
+            $table->unsignedInteger('artist_id');
             $table->unsignedInteger('Songs_id');
             $table->timestamps();
         });

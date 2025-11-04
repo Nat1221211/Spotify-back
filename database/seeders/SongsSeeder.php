@@ -17,7 +17,7 @@ class SongsSeeder extends Seeder
             [
              'nom' => 'Sample 1',
              'durada' => '2.35',
-             'Albums_id' => '1',
+             'album_id' => '1',
              'views' => '1000',
              'data' => '2025-09-30',
              'Genres_id' => '1',
@@ -26,7 +26,7 @@ class SongsSeeder extends Seeder
             [
              'nom' => 'Sample 2',
              'durada' => '2.52',
-             'Albums_id' => '1',
+             'album_id' => '1',
              'views' => '1000',
              'data' => '2025-09-30',
              'Genres_id' => '1',
@@ -35,7 +35,7 @@ class SongsSeeder extends Seeder
             [
              'nom' => 'Sample 3',
              'durada' => '2.25',
-             'Albums_id' => '1',
+             'album_id' => '1',
              'views' => '1000',
              'data' => '2025-09-30',
              'Genres_id' => '1',
@@ -44,7 +44,7 @@ class SongsSeeder extends Seeder
             [
              'nom' => 'Sample 4',
              'durada' => '2.55',
-             'Albums_id' => '1',
+             'album_id' => '1',
              'views' => '1000',
              'data' => '2025-09-30',
              'Genres_id' => '1',

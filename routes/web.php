@@ -53,10 +53,10 @@ Route::post ('/lists__songs', [ListsSongsController::class, 'store']);
 Route::post ('/lists__songs/{list__song}', [ListsSongsController::class, 'update']);
 Route::delete('/lists__songs/{list__song}', [ListsSongsController::class, 'destroy']);
 
-Route::get ('/album__artists', [AlbumArtistController::class, 'index']);
-Route::post ('/album__artists', [AlbumArtistController::class, 'store']);
-Route::post ('/album__artists/{album__artist}', [AlbumArtistController::class, 'update']);
-Route::delete('/album__artists/{album__artist}', [AlbumArtistController::class, 'destroy']);
+Route::get ('/album_artists', [AlbumArtistController::class, 'index']);
+Route::post ('/album_artists', [AlbumArtistController::class, 'store']);
+Route::post ('/album_artists/{album__artist}', [AlbumArtistController::class, 'update']);
+Route::delete('/album_artists/{album__artist}', [AlbumArtistController::class, 'destroy']);
 
 Route::get ('/artist__songs', [ArtistSongsController::class, 'index']);
 Route::post ('/artist__songs', [ArtistSongsController::class, 'store']);
