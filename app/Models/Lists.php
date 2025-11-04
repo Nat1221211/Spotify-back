@@ -11,7 +11,7 @@ class Lists extends Model
 
     protected $fillable = ['nom','User_id','logo_img'];
 
-    public function User() {
+    public function user() {
         return $this->belongsTo(User::class);
     }
 }

@@ -11,7 +11,7 @@ class Artist extends Model
 
     protected $fillable = ['nom_artistic','nacionalitat','Languages_id','data_naixement','seguidors','logo_img'];
     
-    public function Languages() {
+    public function languages() {
         return $this->belongsTo(Languages::class);
     }
 }

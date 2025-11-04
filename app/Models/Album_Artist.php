@@ -11,11 +11,11 @@ class Album_Artist extends Model
 
     protected $fillable = ['Artist_id', 'Albums_id'];
 
-    public function Artist() {
+    public function artist() {
         return $this->belongsToMany(Artist::class);
     }
 
-    public function Albums() {
+    public function albums() {
         return $this->belongsToMany(Albums::class);
     }
 }
