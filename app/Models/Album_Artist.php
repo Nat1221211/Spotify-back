@@ -9,5 +9,13 @@ class Album_Artist extends Model
 {
    use HasFactory;
 
-    protected $fillable = ['id_artista', 'id_album'];
+    protected $fillable = ['Artist_id', 'Albums_id'];
+
+    public function Artist() {
+        return $this->belongsToMany(Artist::class);
+    }
+
+    public function Albums() {
+        return $this->belongsToMany(Albums::class);
+    }
 }

@@ -9,5 +9,13 @@ class Lists_Songs extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['id_list', 'id_song'];
+    protected $fillable = ['Lists_id', 'Songs_id'];
+
+    public function Lists() {
+        return $this->belongsToMany(Lists::class);
+    }
+
+    public function Songs() {
+        return $this->belongsToMany(Songs::class);
+    }
 }
