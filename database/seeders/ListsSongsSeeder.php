@@ -15,24 +15,24 @@ class ListsSongsSeeder extends Seeder
     {
         $values = [
             [
-            'Lists_id' => 1,
-            'Songs_id' => 1,  
+            'playlist_id' => 1,
+            'song_id' => 1,  
             ],
             [
-            'Lists_id' => 1,
-            'Songs_id' => 2,  
+            'playlist_id' => 1,
+            'song_id' => 2,  
             ],
             [
-            'Lists_id' => 1,
-            'Songs_id' => 3,  
+            'playlist_id' => 1,
+            'song_id' => 3,  
             ],
             [
-            'Lists_id' => 1,
-            'Songs_id' => 4,  
+            'playlist_id' => 1,
+            'song_id' => 4,  
             ],
             ];
         foreach($values as $value) {
-            Lists_Songs::updateOrCreate(
+            ListSong::updateOrCreate(
                $value
             );
         }

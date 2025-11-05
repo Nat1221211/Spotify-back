@@ -20,7 +20,7 @@ class SongsSeeder extends Seeder
              'album_id' => '1',
              'views' => '1000',
              'data' => '2025-09-30',
-             'Genres_id' => '1',
+             'genre_id' => '1',
              'tipus' => 'Song',
             ],
             [
@@ -29,7 +29,7 @@ class SongsSeeder extends Seeder
              'album_id' => '1',
              'views' => '1000',
              'data' => '2025-09-30',
-             'Genres_id' => '1',
+             'genre_id' => '1',
              'tipus' => 'Song',
             ],
             [
@@ -38,7 +38,7 @@ class SongsSeeder extends Seeder
              'album_id' => '1',
              'views' => '1000',
              'data' => '2025-09-30',
-             'Genres_id' => '1',
+             'genre_id' => '1',
              'tipus' => 'Song',
             ],
             [
@@ -47,13 +47,13 @@ class SongsSeeder extends Seeder
              'album_id' => '1',
              'views' => '1000',
              'data' => '2025-09-30',
-             'Genres_id' => '1',
+             'genre_id' => '1',
              'tipus' => 'Song',
             ],
             ];
         
         foreach ($values as $song) {
-            Songs::updateOrCreate(
+            Song::updateOrCreate(
                 [
                 'nom' => $song['nom'],
                 ], $song

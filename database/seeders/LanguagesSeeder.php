@@ -13,7 +13,7 @@ class LanguagesSeeder extends Seeder
      */
     public function run(): void
     {
-        Languages::updateOrCreate(
+        Language::updateOrCreate(
             [
             'idioma' => 'English', 
             ]

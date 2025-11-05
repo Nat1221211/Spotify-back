@@ -17,7 +17,7 @@ class ArtistSeeder extends Seeder
             [
             'nom_artistic' => 'The Sample Band',
             'nacionalitat' => 'Español',
-            'Languages_id' => 1,
+            'language_id' => 1,
             'data_naixement' => '2020-06-20',
             'seguidors' => '2000',
             ]

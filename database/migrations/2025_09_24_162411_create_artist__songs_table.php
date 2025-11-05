@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('artist__songs', function (Blueprint $table) {
+        Schema::create('artist_songs', function (Blueprint $table) {
             $table->id();
             $table->unsignedInteger('artist_id');
-            $table->unsignedInteger('Songs_id');
+            $table->unsignedInteger('song_id');
             $table->timestamps();
         });
     }
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('artist__songs');
+        Schema::dropIfExists('artist_songs');
     }
 };

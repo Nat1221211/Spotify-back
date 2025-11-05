@@ -9,10 +9,10 @@ class ListSong extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['lists_id', 'songs_id'];
+    protected $fillable = ['playlist_id', 'song_id'];
 
     public function list() {
-        return $this->belongsToMany(List::class);
+        return $this->belongsToMany(PlayList::class);
     }
 
     public function songs() {
