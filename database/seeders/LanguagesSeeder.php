@@ -13,10 +13,25 @@ class LanguagesSeeder extends Seeder
      */
     public function run(): void
     {
-        Language::updateOrCreate(
+        $values = [
             [
-            'idioma' => 'English', 
-            ]
-        );
+            'idioma' => 'English',  
+            ],
+            [
+            'idioma' => 'Catalan',  
+            ],
+            [
+            'idioma' => 'Spanish',  
+            ],
+            [
+            'idioma' => 'Japanese',  
+            ],
+            ];
+            
+        foreach($values as $value) {
+            Language::updateOrCreate(
+               $value
+            );
+        }
     }
 }
