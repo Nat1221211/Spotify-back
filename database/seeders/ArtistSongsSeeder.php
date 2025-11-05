@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Artist_songs;
+use App\Models\ArtistSong;
 
 class ArtistSongsSeeder extends Seeder
 {
