@@ -13,14 +13,41 @@ class ArtistSeeder extends Seeder
      */
     public function run(): void
     {
-        Artist::updateOrCreate(
+        $values = [
             [
             'nom_artistic' => 'The Sample Band',
             'nacionalitat' => 'Español',
             'language_id' => 1,
             'data_naixement' => '2020-06-20',
             'seguidors' => '2000',
-            ]
-        );
+            ],
+            [
+            'nom_artistic' => 'The Sample Band',
+            'nacionalitat' => 'Español',
+            'language_id' => 1,
+            'data_naixement' => '2020-06-20',
+            'seguidors' => '2000',
+            ],
+            [
+            'nom_artistic' => 'The Sample Band',
+            'nacionalitat' => 'Español',
+            'language_id' => 1,
+            'data_naixement' => '2020-06-20',
+            'seguidors' => '2000',
+            ],
+            [
+            'nom_artistic' => 'The Sample Band',
+            'nacionalitat' => 'Español',
+            'language_id' => 1,
+            'data_naixement' => '2020-06-20',
+            'seguidors' => '2000',
+            ],
+            ];
+
+        foreach($values as $artist) {
+            Artist::updateOrCreate(
+               $artist
+            );
+        }
     }
 }

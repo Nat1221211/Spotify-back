@@ -54,9 +54,7 @@ class SongsSeeder extends Seeder
         
         foreach ($values as $song) {
             Song::updateOrCreate(
-                [
-                'nom' => $song['nom'],
-                ], $song
+                $song
             );
         }
             

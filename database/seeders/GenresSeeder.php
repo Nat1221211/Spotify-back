@@ -27,9 +27,7 @@ class GenresSeeder extends Seeder
 
         foreach ($values as $genre) {
             Genre::updateOrCreate(
-                [
-                'nom' => $genre['nom'],
-                ], $genre
+                $genre
             );
         }
     }

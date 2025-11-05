@@ -13,17 +13,13 @@ class Artist extends Model
 
     protected $fillable = ['nom_artistic','nacionalitat','language_id','data_naixement','seguidors','logo_img'];
     
-    public function languages() {
-        return $this->belongsTo(Language::class);
-    }
-
     public function albums() {
         return $this->belongsToMany(Artist::class, 'album_artists', 'album_id', 'artist_id');
 
     }
 
-    public function language() {
-        return $this->belongsToMany(Artist::class, 'language_id');
+    public function languages() {
+        return $this->belongsTo(Language::class, 'language_id');
 
     }
 
