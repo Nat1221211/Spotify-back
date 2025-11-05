@@ -13,10 +13,24 @@ class GenresSeeder extends Seeder
      */
     public function run(): void
     {
-        Genre::updateOrCreate(
+        $values = [
             [
-            'nom' => 'Samples',
-            ]
-        );
+             'nom' => 'Samples',
+            ],
+            [
+             'nom' => 'Samples 2',
+            ],
+            [
+             'nom' => 'Samples 3',
+            ],
+            ];
+
+        foreach ($values as $genre) {
+            Genre::updateOrCreate(
+                [
+                'nom' => $genre['nom'],
+                ], $genre
+            );
+        }
     }
 }
