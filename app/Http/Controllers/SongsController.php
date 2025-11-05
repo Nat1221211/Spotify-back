@@ -9,7 +9,7 @@ class SongsController extends Controller
  // GET /api/songs
     public function index(Request $request)
     {
-        $songs = Song::all();
+        $songs = Song::with('genres')->get();
         return response()->json($songs);
     }
  // POST /api/songs

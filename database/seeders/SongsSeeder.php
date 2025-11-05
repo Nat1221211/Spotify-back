@@ -38,7 +38,7 @@ class SongsSeeder extends Seeder
              'album_id' => '1',
              'views' => '1000',
              'data' => '2025-09-30',
-             'genre_id' => '1',
+             'genre_id' => '2',
              'tipus' => 'Song',
             ],
             [
@@ -47,7 +47,7 @@ class SongsSeeder extends Seeder
              'album_id' => '1',
              'views' => '1000',
              'data' => '2025-09-30',
-             'genre_id' => '1',
+             'genre_id' => '3',
              'tipus' => 'Song',
             ],
             ];
