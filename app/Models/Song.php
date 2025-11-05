@@ -22,10 +22,10 @@ class Song extends Model
     }
 
     public function lists_Songs() {
-        return $this->hasOne(ListSong::class);
+        return $this->belongsToMany(ListSong::class);
     }
 
     public function artist_Songs() {
-        return $this->hasOne(ArtistSong::class);
+        return $this->belongsToMany(ArtistSong::class);
     }
 }

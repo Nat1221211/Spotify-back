@@ -9,7 +9,7 @@ class AlbumsController extends Controller
     // GET /api/albums
     public function index(Request $request)
     {
-        $albums = Album::all();
+        $albums = Album::with('songs')->get();
         return response()->json($albums);
     }
  // POST /api/albums
