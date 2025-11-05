@@ -13,11 +13,30 @@ class AlbumArtistSeeder extends Seeder
      */
     public function run(): void
     {
-        AlbumArtist::updateOrCreate(
+        
+        $values = [
             [
             'artist_id' => 1, 
             'album_id' => 1,
-            ]
-        );
+            ],
+            [
+            'artist_id' => 1, 
+            'album_id' => 1,
+            ],
+            [
+            'artist_id' => 1, 
+            'album_id' => 1,
+            ],
+            [
+            'artist_id' => 1, 
+            'album_id' => 1,
+            ],
+            ];
+
+        foreach($values as $value) {
+            AlbumArtist::updateOrCreate(
+               $value
+            );
+        }
     }
 }

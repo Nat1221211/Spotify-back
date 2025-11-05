@@ -13,12 +13,33 @@ class AlbumSeeder extends Seeder
      */
     public function run(): void
     {
-        Album::updateOrCreate(
+        $values = [
             [
             'nom'  => 'Sample Songs',
             'quantitat' => 4,
             'data' => '2025-09-30',
-            ]
-        );
+            ],
+            [
+            'nom'  => 'Sample Songs',
+            'quantitat' => 4,
+            'data' => '2025-09-30',
+            ],
+            [
+            'nom'  => 'Sample Songs',
+            'quantitat' => 4,
+            'data' => '2025-09-30',
+            ],
+            [
+            'nom'  => 'Sample Songs',
+            'quantitat' => 4,
+            'data' => '2025-09-30',
+            ],
+            ];
+            
+        foreach($values as $album) {
+            Album::updateOrCreate(
+               $album
+            );
+        }
     }
 }
