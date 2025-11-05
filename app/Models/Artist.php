@@ -22,4 +22,9 @@ class Artist extends Model
 
     }
 
+    public function language() {
+        return $this->belongsToMany(Artist::class, 'language_id');
+
+    }
+
 }
