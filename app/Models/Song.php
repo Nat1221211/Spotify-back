@@ -11,7 +11,7 @@ class Song extends Model
 
     protected $table = 'songs';
     
-    protected $fillable = ['nom','durada','album_id','views','data','genres_id','tipus','logo_img','background_img'];
+    protected $fillable = ['nom','durada','album_id','views','data','genre_id','tipus','logo_img','background_img'];
 
     public function albums() {
         return $this->belongsTo(Album::class);

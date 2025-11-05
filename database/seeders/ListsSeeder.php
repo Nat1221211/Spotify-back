@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\List;
+use App\Models\PlayList;
 
 class ListsSeeder extends Seeder
 {
@@ -13,10 +13,10 @@ class ListsSeeder extends Seeder
      */
     public function run(): void
     {
-        Lists::updateOrCreate(
+        PlayList::updateOrCreate(
             [
             'nom' => 'List 1',
-            'User_id' => 1,
+            'user_id' => 1,
             ]
         );
     }

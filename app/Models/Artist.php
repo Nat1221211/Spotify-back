@@ -11,7 +11,7 @@ class Artist extends Model
 
     protected $table = 'artists';
 
-    protected $fillable = ['nom_artistic','nacionalitat','languages_id','data_naixement','seguidors','logo_img'];
+    protected $fillable = ['nom_artistic','nacionalitat','language_id','data_naixement','seguidors','logo_img'];
     
     public function languages() {
         return $this->belongsTo(Language::class);
@@ -24,7 +24,7 @@ class Artist extends Model
 
     
 
-    public function artist_Songs() {
-        return $this->belongsToMany(ArtistSong::class);
+    public function artistSongs() {
+        return $this->belongsToMany(ArtistSong::class, 'artist_songs', 'artist_id', 'song_id');
     }
 }

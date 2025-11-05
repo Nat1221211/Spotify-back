@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class List extends Model
+class PlayList extends Model
 {
     //use HasFactory;
     
-    protected $table = 'lists';
+    protected $table = 'playlists';
     
     protected $fillable = ['nom','user_id','logo_img'];
 

@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('lists__songs', function (Blueprint $table) {
+        Schema::create('list_songs', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('Lists_id');
-            $table->unsignedInteger('Songs_id');
+            $table->unsignedInteger('playlist_id');
+            $table->unsignedInteger('song_id');
             $table->timestamps();
         });
     }
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('lists__songs');
+        Schema::dropIfExists('list_songs');
     }
 };

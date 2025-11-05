@@ -18,7 +18,7 @@ return new class extends Migration
             $table->unsignedInteger('album_id');
             $table->unsignedInteger('views');
             $table->date('data');
-            $table->unsignedInteger('Genres_id');
+            $table->unsignedInteger('genre_id');
             $table->string('tipus');
             $table->string('logo_img')->nullable();
             $table->string('background_img')->nullable();

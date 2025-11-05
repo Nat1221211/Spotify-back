@@ -13,7 +13,7 @@ class GenresSeeder extends Seeder
      */
     public function run(): void
     {
-        Genres::updateOrCreate(
+        Genre::updateOrCreate(
             [
             'nom' => 'Samples',
             ]
