@@ -13,11 +13,29 @@ class ListsSeeder extends Seeder
      */
     public function run(): void
     {
-        PlayList::updateOrCreate(
+        $values = [
             [
             'nom' => 'List 1',
-            'user_id' => 1,
-            ]
-        );
+            'user_id' => 1,  
+            ],
+            [
+            'nom' => 'List 2',
+            'user_id' => 2,  
+            ],
+            [
+            'nom' => 'List 3',
+            'user_id' => 3,  
+            ],
+            [
+            'nom' => 'List 4',
+            'user_id' => 4,  
+            ],
+            ];
+            
+        foreach($values as $value) {
+            PlayList::updateOrCreate(
+               $value
+            );
+        }
     }
 }
