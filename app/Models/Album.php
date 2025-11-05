@@ -13,11 +13,12 @@ class Album extends Model
 
     protected $fillable = ['nom','quantitat','data','logo_img'];
 
-    public function artists() {
+    public function artist() {
         return $this->belongsToMany(Artist::class);
     }
 
     public function songs() {
-        return $this->hasOne(Song::class);
+        return $this->hasMany(Song::class, 'album_id');
     }
+
 }
